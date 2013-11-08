@@ -1,6 +1,6 @@
 Build script for OpenSSL 1.0.1e for iOS.
 
-It creates multi-architecture static lib with support for armv7, armv7s and
+It creates multi-architecture static lib with support for armv7, armv7s, arm64 and
 i386 (for running in the simulator).
 
 Works on:
@@ -21,20 +21,6 @@ After that, you’ll get 2 dirs:
  * ./include/ - contain openssl headers
 
 NOTE: build procedure may take several minutes
-
-Important: Support for ARMv6 has been removed because Xcode 4.5 does not support
-that architecture anymore. This means that these libraries cannot be used on the
-iPhone 3G or older. File an issue if that is a really big deal for you and I will
-try to work around that Xcode limitation.
-
-Building is done by invoking the build.sh script:
-
- ./build.sh
-
-It will take about 5 minutes on a modern Mac. The result of the build can be found at:
-
- lib/ - will contain libssl.a and libcrypto.a
- include/ - will contain all OpenSSL headers
 
 
 The Example directory contains a little sample app. It calculates a SHA1 digest using

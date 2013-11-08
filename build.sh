@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # This script builds a static version of OpenSSL ${OPENSSL_VERSION}
-# for the latest iOS containing binaries for armv7, armv7s and i386.
+# for the latest iOS containing binaries for armv7, armv7s, arm64 and i386.
 
 set -x
 
 # Setup 
 OPENSSL_VERSION="1.0.1e"
 
-ARCHS=("i386" "armv7" "armv7s")
-SDKS=("iphonesimulator" "iphoneos" "iphoneos")
+ARCHS=("i386" "armv7" "armv7s" "arm64")
+SDKS=("iphonesimulator" "iphoneos" "iphoneos" "iphoneos")
 TMP_DIR="/tmp/openssl-${OPENSSL_VERSION}"
 OUTPUT_INCLUDE_DIR "include"
 OUTPUT_LIB_DIR "lib"
