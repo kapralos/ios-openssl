@@ -11,8 +11,8 @@ OPENSSL_VERSION="1.0.1e"
 ARCHS=("i386" "armv7" "armv7s" "arm64")
 SDKS=("iphonesimulator" "iphoneos" "iphoneos" "iphoneos")
 TMP_DIR="/tmp/openssl-${OPENSSL_VERSION}"
-OUTPUT_INCLUDE_DIR "include"
-OUTPUT_LIB_DIR "lib"
+OUTPUT_INCLUDE_DIR="include"
+OUTPUT_LIB_DIR="lib"
 
 
 build()
